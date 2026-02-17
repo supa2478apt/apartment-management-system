@@ -1,0 +1,19 @@
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
+import { getStorage } from "firebase/storage";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDysjzKO3lQB6FTlRBUkYCThdxP9ptNcxQ",
+  authDomain: "apartment-management-sys-7ea01.firebaseapp.com",
+  projectId: "apartment-management-sys-7ea01",
+  storageBucket: "apartment-management-sys-7ea01.firebasestorage.app",
+  messagingSenderId: "131824617998",
+  appId: "1:131824617998:web:0d51c0c36f13be3cef8a5f",
+};
+
+const app = initializeApp(firebaseConfig);
+
+export const db = getFirestore(app);
+export const auth = getAuth(app);
+export const storage = getStorage(app);
